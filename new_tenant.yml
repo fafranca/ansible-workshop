@@ -1,0 +1,6 @@
+---
+- name: new tenant
+  hosts: apic
+
+  roles:
+  - tenants

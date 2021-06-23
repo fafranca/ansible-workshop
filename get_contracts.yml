@@ -1,0 +1,6 @@
+---
+- name: Query all contracts from SnV tenant
+  hosts: apic
+
+  roles:
+    - contracts 
