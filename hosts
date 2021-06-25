@@ -1,2 +1,13 @@
+[web]
+node1 ansible_host=3.67.6.230
+node2 ansible_host=54.93.163.71
+node3 ansible_host=18.184.52.35
+
+[web:vars]
+ansible_user=ansible
+
+[control]
+ansible-1 ansible_host=3.127.222.103 ansible_connection=local
+
 [apic]
 apic1 ansible_host=sandboxapicdc.cisco.com ansible_connection=local
