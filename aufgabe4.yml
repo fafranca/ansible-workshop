@@ -1,0 +1,28 @@
+---
+  - name: Aufgabe4
+    host: node1
+
+    tasks:
+      - name: create folder
+        file: 
+          path: ~/aufgabe4
+          state: directory
+          mode: '0755'
+
+      - name: File1 erstellen
+        copy:
+          dest: "~/aufgabe4/essen.txt"
+          content: "{{ essen }}"
+        become: yes
+
+      - name: File2 erstellen
+        copy:
+          dest: "~/aufgabe4/datum.txt"
+          content: "{{ datum }}"
+        become: yes
+      
+      - name: File3 erstellen
+        copy:
+          dest: "~/aufgabe4/IPv4.txt"
+          content: "{{ ip }}"
+        become: yes
